@@ -31,33 +31,60 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
-
-    <RelativeLayout
+    <LinearLayout
+        android:id="@+id/verticalContent"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginTop="48dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="0dp">
 
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="52dp"
-            android:layout_height="match_parent"
-            android:layout_centerVertical="true"
-            android:layout_marginStart="68dp"
-            app:srcCompat="@drawable/ic_launcher_foreground" />
+        <LinearLayout
+            android:id="@+id/buscadorContainer"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="0dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            tools:ignore="InvalidId,MissingConstraints">
 
-        <EditText
-            android:id="@+id/editTextText3"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginStart="16dp"
-            android:layout_toEndOf="@id/imageView2"
-            android:ems="10"
-            android:inputType="text"
-            android:text="Name" />
-    </RelativeLayout>
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="52dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                app:srcCompat="@drawable/lup" />
+
+            <EditText
+                android:id="@+id/etInput"
+                android:layout_width="268dp"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginStart="0dp"
+                android:layout_toEndOf="@id/imageView2"
+                android:ems="10"
+                android:inputType="text"
+                android:text="Name" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnBuscar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginVertical="20dp"
+            android:backgroundTint="#FF0000"
+            android:fontFamily="sans-serif"
+            android:text="BUSCAR"
+            android:textColor="@color/white"
+            android:textColorLink="#FFFCFC"
+            android:textSize="24dp"
+            app:cornerRadius="0dp">
+
+
+        </Button>
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
