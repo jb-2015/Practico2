@@ -2,6 +2,7 @@ package com.juanbecerra.practico2;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -36,6 +37,8 @@ public class ActivityLibros extends AppCompatActivity {
                 rv.setAdapter(la);
             }
         });
-        vm.cargarListaLibros();
+        Intent i = getIntent();
+        String tituloLibro = i.getStringExtra("tituloLibro");
+        vm.cargarListaLibros(tituloLibro);
     }
 }

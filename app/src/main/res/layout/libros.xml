@@ -6,6 +6,7 @@
     android:layout_height="wrap_content"
     app:cardBackgroundColor="#112453"
     app:cardCornerRadius="10dp">
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constrait"
         android:layout_width="match_parent"
@@ -27,9 +28,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="56dp"
-            android:layout_marginTop="56dp"
-            android:textColor="@color/white"
+            android:layout_marginTop="16dp"
             android:text="Titulo"
+            android:textColor="@color/white"
             android:textSize="24sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -41,11 +42,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="46dp"
-            android:layout_marginTop="40dp"
-            android:textColor="@color/white"
+            android:layout_marginTop="32dp"
             android:text="Isbn"
+            android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.126"
+            app:layout_constraintHorizontal_bias="0.25"
             app:layout_constraintStart_toEndOf="@+id/ivPortada"
             app:layout_constraintTop_toBottomOf="@+id/tvTitulo" />
 
@@ -53,12 +54,12 @@
             android:id="@+id/tvAutor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/white"
-            android:layout_marginStart="50dp"
-            android:layout_marginTop="36dp"
+            android:layout_marginStart="46dp"
+            android:layout_marginTop="28dp"
             android:text="Autor"
+            android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.08"
+            app:layout_constraintHorizontal_bias="0.25"
             app:layout_constraintStart_toEndOf="@+id/ivPortada"
             app:layout_constraintTop_toBottomOf="@+id/tvIsbn" />
 
@@ -66,12 +67,12 @@
             android:id="@+id/tvCantPaginas"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="59dp"
-            android:textColor="@color/white"
-            android:layout_marginTop="44dp"
+            android:layout_marginStart="46dp"
+            android:layout_marginTop="36dp"
             android:text="Cant paginas"
+            android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.25"
             app:layout_constraintStart_toEndOf="@+id/ivPortada"
             app:layout_constraintTop_toBottomOf="@+id/tvAutor" />
 
@@ -79,24 +80,27 @@
             android:id="@+id/tvAnioLanzamiento"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/white"
-            android:layout_marginTop="48dp"
+            android:layout_marginStart="46dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="4dp"
             android:text="AnioLanzamiento"
+            android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.917"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/ivPortada" />
+            app:layout_constraintHorizontal_bias="0.25"
+            app:layout_constraintStart_toEndOf="@+id/ivPortada"
+            app:layout_constraintTop_toBottomOf="@+id/tvCantPaginas" />
 
         <TextView
             android:id="@+id/tvGenero"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="68dp"
+            android:layout_marginStart="42dp"
+            android:layout_marginTop="28dp"
             android:text="Genero"
             android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.841"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.25"
+            app:layout_constraintStart_toEndOf="@+id/ivPortada"
             app:layout_constraintTop_toBottomOf="@+id/tvAnioLanzamiento" />
 
         <TextView
@@ -104,6 +108,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="96dp"
+            android:layout_marginBottom="40dp"
+            android:padding="10dp"
             android:text="Descripcion"
             android:textColor="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
